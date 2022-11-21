@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <img src="../../public/img/h3-rev-img-2.png" alt="">
     </div>
 </template>
 
@@ -25,7 +25,8 @@ div {
     background-color: black;
 
     img {
-        width: 100vw;
+        margin: 0 auto;
+        width: 20%;
     }
 }
 </style>

@@ -23,7 +23,7 @@
             </div>
         </nav>
         <!--SLIDER-->
-        <SliderOne />
+        <SliderHeader />
     </header>
 
 
@@ -31,11 +31,11 @@
 
 <script>
 import { store } from '../store';
-import SliderOne from './SliderOne.vue';
+import SliderHeader from './SliderHeader.vue';
 
 export default {
     name: 'AppHeader',
-    components: { SliderOne },
+    components: { SliderHeader },
     data() {
         return {
             store
