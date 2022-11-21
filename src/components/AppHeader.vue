@@ -22,6 +22,8 @@
                 </div>
             </div>
         </nav>
+        <!--SLIDER-->
+        <SliderOne />
     </header>
 
 
@@ -29,12 +31,14 @@
 
 <script>
 import { store } from '../store';
+import SliderOne from './SliderOne.vue';
 
 export default {
     name: 'AppHeader',
+    components: { SliderOne },
     data() {
         return {
-
+            store
         }
     },
 
@@ -51,7 +55,8 @@ export default {
 <style lang="scss" scoped>
 .navBar {
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex block;
+    position: fixed;
+    z-index: 1000;
 
     .boolflixMenu {
         display: flex;

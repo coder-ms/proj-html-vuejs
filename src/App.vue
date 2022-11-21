@@ -1,8 +1,10 @@
 <!--TEMPLATE HTML GENERALE-->
 <template>
   <AppHeader />
+  <main>
+    <AppMain />
+  </main>
 
-  <AppMain />
 
   <AppFooter />
 </template>
