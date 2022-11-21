@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="navBar col-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="boolflixMenu col-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="pizzaMenu col-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                     <ul>
                         <li><a class="navbarBrand" href="#">ORDER ONLINE</a></li>
@@ -23,7 +23,7 @@
             </div>
         </nav>
         <!--SLIDER-->
-        <SliderHeader />
+        <HeaderSlider />
     </header>
 
 
@@ -31,11 +31,11 @@
 
 <script>
 import { store } from '../store';
-import SliderHeader from './SliderHeader.vue';
+import HeaderSlider from './HeaderSlider.vue';
 
 export default {
     name: 'AppHeader',
-    components: { SliderHeader },
+    components: { HeaderSlider },
     data() {
         return {
             store
@@ -53,88 +53,86 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navBar {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    z-index: 1000;
+header {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    //border: 1px solid green;
 
-    .boolflixMenu {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        padding: 10px;
-        width: 70%;
-        margin: 0 auto;
+    .navBar {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 1000;
 
+        //border: 1px solid yellow;
 
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
+        .pizzaMenu {
+            height: 80px;
+            padding: 10px;
+            width: 70%;
+            margin: 0 auto;
 
 
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-                li {
-                    display: inline;
-                    margin-left: 6px;
-                    font-size: 12px;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    margin: 0 10px;
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
 
-                    .navbarBrand {
-                        &:first-child {
-                            background-color: rgb(255, 102, 0);
-                            padding: 10px;
-                            font-weight: 800;
+                    li {
+                        display: inline;
+                        margin-left: 6px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin: 0 10px;
 
-                            &:hover {
-                                color: rgb(255, 102, 0);
-                                background-color: white;
-                            }
+                        .navbarBrand {
+                            &:first-child {
+                                background-color: rgb(255, 102, 0);
+                                padding: 10px;
+                                font-weight: 800;
 
-                            &:active {
-                                color: rgb(255, 102, 0);
-                                background-color: white;
+                                &:hover {
+                                    color: rgb(255, 102, 0);
+                                    background-color: white;
+                                }
+
+                                &:active {
+                                    color: rgb(255, 102, 0);
+                                    background-color: white;
+                                }
                             }
                         }
-                    }
 
-                    a {
-                        text-decoration: none;
-                        color: white;
+                        a {
+                            text-decoration: none;
+                            color: white;
+
+                            img {
+                                width: 20px;
+                                height: 10px;
+                                margin-right: 5px;
+                                filter: invert(1);
+                            }
+
+                            i {
+
+                                height: 10px;
+                            }
+                        }
 
                         img {
-                            width: 20px;
-                            height: 10px;
-                            margin-right: 5px;
-                            filter: invert(1);
-                        }
-
-                        i {
-
-                            height: 10px;
+                            height: 60px;
                         }
                     }
-
-                    img {
-                        height: 60px;
-                    }
-
-
-
                 }
             }
         }
-
-
-
     }
-
 }
 </style>

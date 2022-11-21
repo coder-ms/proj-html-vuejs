@@ -17,21 +17,38 @@
     </div>
 
     <!--SLIDER MAIN-->
-    <SliderMain />
+    <MainSlider />
 
+    <!--IMG E DESCRIZIONE-->
     <div class="images col-12 col-lg-12 col-md-12 col-sm-12">
       <div class="col-6 col-lg-6 col-md-6 col-sm-6">
         <img src="../../public/img/h1-img-4.jpg" alt="Baffo">
       </div>
       <div class="col-6 col-lg-6 col-md-6 col-sm-6">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, vel consequatur. Autem nemo voluptas aspernatur
-        veniam distinctio doloribus ab, dolores obcaecati nesciunt, qui magnam corrupti. Facere porro iure dolorem
-        ipsam.
+        <div class="col-6 col-lg-6 col-md-6 col-sm-6 p-5 my-5 mx-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, vel consequatur. Autem nemo voluptas
+          aspernatur
+          veniam distinctio doloribus ab, dolores obcaecati nesciunt, qui magnam corrupti. Facere porro iure dolorem
+          ipsam.
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
-        reprehenderit
-        iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus atque
-        libero aliquid.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
+          reprehenderit
+          iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus
+          atque
+          libero aliquid.
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
+          reprehenderit
+          iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus
+          atque
+          libero aliquid.
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
+          reprehenderit
+          iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus
+          atque
+          libero aliquid.
+        </div>
 
       </div>
     </div>
@@ -77,11 +94,11 @@
 
 <script>
 import { store } from '../store';
-import SliderMain from './SliderMain.vue';
+import MainSlider from './MainSlider.vue';
 
 export default {
   name: 'AppHeader',
-  components: { SliderMain },
+  components: { MainSlider },
   data() {
     return {
       store
@@ -134,9 +151,11 @@ main {
         height: 40px;
         width: 40px;
         text-align: center;
-        padding: 8px 0;
+        padding: 12px 0;
         border-radius: 50%;
         transform: translate(-250%);
+        text-transform: uppercase;
+        font-size: 12px;
       }
 
       img {
