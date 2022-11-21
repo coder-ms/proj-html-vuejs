@@ -1,23 +1,47 @@
-<script setup>
-//import HelloWorld from './components/HelloWorld.vue'
-//import TheWelcome from './components/TheWelcome.vue'
-</script>
-
+<!--TEMPLATE HTML GENERALE-->
 <template>
-  <header>
-
-
-  </header>
+  <AppHeader />
 
   <main>
-
+    <AppMain />
   </main>
 
-  <footer>
-
-  </footer>
 </template>
 
-<style>
+<script>
+
+// IMPORT
+import axios from 'axios';
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+import { store } from './store';
+
+// SCRIPT EXPORT DEFAULT
+export default {
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter,
+  },
+  data() {
+    return {
+      store,
+    }
+  },
+
+  methods: {
+    getMovies() {
+
+    },
+
+  },
+  created() {
+
+  }
+}
+</script>
+
+<style lang="scss" scoped>
 
 </style>
