@@ -1,20 +1,7 @@
 <template>
   <main>
     <!--4 IMAGES-->
-    <div class="images col-12 col-lg-12 col-md-12 col-sm-12">
-      <div class="col-3 col-lg-3 col-md-3 col-sm-3">
-        <img src="../../public/img/h3-img-1.jpg" alt="Baffo">
-      </div>
-      <div class="col-3 col-lg-3 col-md-3 col-sm-3">
-        <img src="../../public/img/h3-img-2.jpg" alt="Baffo">
-      </div>
-      <div class="col-3 col-lg-3 col-md-3 col-sm-3">
-        <img src="../../public/img/h3-img-3.jpg" alt="Baffo">
-      </div>
-      <div class="col-3 col-lg-3 col-md-3 col-sm-3">
-        <img src="../../public/img/h3-img-4.jpg" alt="Baffo">
-      </div>
-    </div>
+    <ImagesGalleryMain />
 
     <!--SLIDER MAIN-->
     <MainSlider />
@@ -95,10 +82,11 @@
 <script>
 import { store } from '../store';
 import MainSlider from './MainSlider.vue';
+import ImagesGalleryMain from './ImagesGalleryMain.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider },
+  components: { MainSlider, ImagesGalleryMain },
   data() {
     return {
       store
@@ -118,19 +106,6 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  .images {
-    display: flex;
-    flex-wrap: wrap;
-
-    div {
-      border: 1px solid grey;
-
-
-      img {
-        width: 100%;
-      }
-    }
-  }
 
   .imagesPizza {
     display: flex;
