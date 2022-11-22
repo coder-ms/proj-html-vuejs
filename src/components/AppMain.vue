@@ -17,6 +17,9 @@
 
       </div>
     </div>
+
+    <!--SCRAMBLE IMG-->
+    <ScrambleImg />
     <!--PIZZA IMAGES-->
     <div class="col-12 col-lg-12 col-md-12 col-sm-12">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, vel consequatur. Autem nemo voluptas aspernatur
@@ -62,10 +65,11 @@ import { store } from '../store';
 import MainSlider from './MainSlider.vue';
 import ImagesGalleryMain from './ImagesGalleryMain.vue';
 import DescriptionMenu from './DescriptionMenu.vue';
+import ScrambleImg from './ScrambleImg.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider, ImagesGalleryMain, DescriptionMenu },
+  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg },
   data() {
     return {
       store
