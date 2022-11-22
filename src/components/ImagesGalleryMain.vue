@@ -8,7 +8,6 @@
 
 <script>
 export default {
-
     name: 'ImagesGalleryMain',
     data() {
         return {
@@ -28,11 +27,7 @@ export default {
             ],
         }
     },
-
 }
-
-
-
 </script>
 
 <style lang="scss" scoped>

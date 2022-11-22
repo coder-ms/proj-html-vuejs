@@ -20,38 +20,20 @@
 
     <!--SCRAMBLE IMG-->
     <ScrambleImg />
+    <ClientTypology />
     <!--PIZZA IMAGES-->
-    <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, vel consequatur. Autem nemo voluptas aspernatur
-      veniam distinctio doloribus ab, dolores obcaecati nesciunt, qui magnam corrupti. Facere porro iure dolorem ipsam.
+    <div class="pizzaFlavour">
+      <div class="pizzaDescription col-12 col-lg-12 col-md-12 col-sm-12">
+        <h6>CHOOSE YOUR FLAVOUR</h6>
+        <h2>THE BEST PIZZA IN TOWN</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut blandit arcu in pretium molestie. Interdum et
+          malesuada faes ac.</p>
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto reprehenderit
-      iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus atque
-      libero aliquid.
 
+      </div>
+      <PizzaImg />
     </div>
-    <div class="imagesPizza col-12 col-lg-12 col-md-12 col-sm-12">
-      <div class="firstPizza">
-        <img src="../../public/img/h3-product-img-3a-150x150.png" alt="Pizza">
-      </div>
-      <div class="pizzaSelect col-2 col-lg-2 col-md-2 col-sm-2">
-        <img src="../../public/img/h3-product-img-3a-150x150.png" alt="Pizza">
-      </div>
-      <div class="pizzaSelect col-2 col-lg-2 col-md-2 col-sm-2">
 
-        <img src="../../public/img/h3-product-img-3a-150x150.png" alt="Pizza">
-        <a href="#">Sold</a>
-      </div>
-      <div class="pizzaSelect col-2 col-lg-2 col-md-2 col-sm-2">
-        <img src="../../public/img/h3-product-img-3a-150x150.png" alt="Pizza">
-      </div>
-      <div class="pizzaSelect col-2 col-lg-2 col-md-2 col-sm-2">
-        <img src="../../public/img/h3-product-img-3a-150x150.png" alt="Pizza">
-      </div>
-      <div class="lastPizza">
-        <img src="../../public/img/h3-product-img-3a-150x150.png" alt="Pizza">
-      </div>
-    </div>
   </main>
 
 
@@ -66,10 +48,12 @@ import MainSlider from './MainSlider.vue';
 import ImagesGalleryMain from './ImagesGalleryMain.vue';
 import DescriptionMenu from './DescriptionMenu.vue';
 import ScrambleImg from './ScrambleImg.vue';
+import ClientTypology from './ClientTypology.vue';
+import PizzaImg from './PizzaImg.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg },
+  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, ClientTypology, PizzaImg },
   data() {
     return {
       store
@@ -113,45 +97,31 @@ main {
     }
   }
 
-  .imagesPizza {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: hidden;
+  .pizzaFlavour {
+    margin: 50px 0;
 
+    .pizzaDescription {
+      width: 30%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 0;
 
-    .pizzaSelect {
-      border: 1px solid grey;
-      display: flex;
-      justify-content: center;
-      margin: 0 40px;
-
-      a {
-        text-decoration: none;
-        color: white;
-        background-color: rgb(255, 102, 0);
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        padding: 12px 0;
-        border-radius: 50%;
-        transform: translate(-250%);
-        text-transform: uppercase;
+      h6 {
+        margin-top: 20px;
+        color: rgb(255, 60, 0);
         font-size: 12px;
+        font-weight: 800;
       }
 
-      img {
-        margin: 0 auto;
+      h2 {
+        font-size: 30px;
+        font-weight: 600;
       }
-    }
 
-    .firstPizza {
-      border: 1px solid grey;
-      transform: translate(-30%);
-    }
-
-    .lastPizza {
-      border: 1px solid grey;
-      transform: translate(30%);
+      p {
+        font-size: 16px;
+        color: black;
+      }
     }
   }
 }
