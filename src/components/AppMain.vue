@@ -20,19 +20,32 @@
 
     <!--SCRAMBLE IMG-->
     <ScrambleImg />
+
+    <!--CUSTOMERS-->
+
+    <!--CLIENT TYPOLOGY-->
     <ClientTypology />
+
     <!--PIZZA IMAGES-->
     <div class="pizzaFlavour">
       <div class="pizzaDescription col-12 col-lg-12 col-md-12 col-sm-12">
         <h6>CHOOSE YOUR FLAVOUR</h6>
-        <h2>THE BEST PIZZA IN TOWN</h2>
+        <h2>THE BEST PIZZA MENU IN TOWN</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut blandit arcu in pretium molestie. Interdum et
           malesuada faes ac.</p>
-
-
       </div>
       <PizzaImg />
     </div>
+
+    <!--PIZZA COMICS-->
+    <PizzaComics />
+
+
+
+
+
+
+
 
   </main>
 
@@ -49,11 +62,13 @@ import ImagesGalleryMain from './ImagesGalleryMain.vue';
 import DescriptionMenu from './DescriptionMenu.vue';
 import ScrambleImg from './ScrambleImg.vue';
 import ClientTypology from './ClientTypology.vue';
+
 import PizzaImg from './PizzaImg.vue';
+import PizzaComics from './PizzaComics.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, ClientTypology, PizzaImg },
+  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, ClientTypology, PizzaImg, PizzaComics },
   data() {
     return {
       store
@@ -76,14 +91,16 @@ main {
   .imageDescription {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 0;
 
     .image {
-      border: 1px solid grey;
+      //border: 1px solid grey;
       background-image: url('../../public/img/h1-img-4.jpg');
       height: 800px;
       display: flex;
       align-items: center;
       justify-content: center;
+
 
       img {
         width: 60%;

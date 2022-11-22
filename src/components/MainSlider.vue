@@ -88,10 +88,10 @@ export default {
 
 <style lang="scss" scoped>
 .containerx {
-
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     //border: 1px solid white;
     height: 625px;
+    padding: 10px 0;
 
 
     .sliderWrapper {

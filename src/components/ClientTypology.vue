@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="clientsTypology col-12 col-lg-12 col-md-12 col-sm-12">
-            <div v-for="(item, index) in clientsTypologyArray" :key="item">
+            <div v-for="(item, index) in clientTypologyArray" :key="item">
                 <img :src="item.imageClient" alt="" />
             </div>
         </div>
@@ -13,7 +13,7 @@ export default {
     name: 'ClientsTypology',
     data() {
         return {
-            clientsTypologyArray: [
+            clientTypologyArray: [
                 {
                     imageClient: '../../public/img/h1-clients-img-1.png',
                 },
@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
-    height: 400px;
+    height: 250px;
     background-color: rgb(247, 237, 225);
     display: flex;
     align-items: center;

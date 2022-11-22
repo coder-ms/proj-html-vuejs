@@ -35,10 +35,11 @@ export default {
     display: flex;
 
     div {
-
+        padding: 10px;
 
         img {
             width: 100%;
+
         }
     }
 }

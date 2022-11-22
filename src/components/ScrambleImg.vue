@@ -55,6 +55,7 @@ export default {
 <style lang="scss" scoped>
 .containerx {
     height: 600px;
+    margin: 10px 0;
     //overflow: hidden;
 
     .rowOne {

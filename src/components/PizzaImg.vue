@@ -41,10 +41,10 @@ export default {
 <style lang="scss" scoped>
 .containerx {
     display: flex;
-    height: 400px;
-    overflow: hidden;
+    height: 300px;
 
     .imagesPizza {
+        background-color: beige;
 
         .pizzaSelect {
             border: 1px solid grey;
