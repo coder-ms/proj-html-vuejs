@@ -88,11 +88,9 @@ export default {
 
 <style lang="scss" scoped>
 .containerx {
-
     background-color: black;
     //border: 1px solid white;
     height: 625px;
-
 
     .sliderWrapper {
         display: flex;
@@ -160,6 +158,5 @@ export default {
             }
         }
     }
-
 }
 </style>

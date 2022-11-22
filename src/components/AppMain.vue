@@ -7,35 +7,13 @@
     <MainSlider />
 
     <!--IMG E DESCRIZIONE-->
-    <div class="images col-12 col-lg-12 col-md-12 col-sm-12">
-      <div class="col-6 col-lg-6 col-md-6 col-sm-6">
-        <img src="../../public/img/h1-img-4.jpg" alt="Baffo">
+    <div class="imageDescription col-12 col-lg-12 col-md-12 col-sm-12">
+      <div class="image col-6 col-lg-6 col-md-6 col-sm-6">
+        <img src="../../public/img/h1-img-7n.png" alt="Baffo">
       </div>
-      <div class="col-6 col-lg-6 col-md-6 col-sm-6">
-        <div class="col-6 col-lg-6 col-md-6 col-sm-6 p-5 my-5 mx-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, vel consequatur. Autem nemo voluptas
-          aspernatur
-          veniam distinctio doloribus ab, dolores obcaecati nesciunt, qui magnam corrupti. Facere porro iure dolorem
-          ipsam.
+      <div class=" description col-6 col-lg-6 col-md-6 col-sm-6">
 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
-          reprehenderit
-          iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus
-          atque
-          libero aliquid.
-
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
-          reprehenderit
-          iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus
-          atque
-          libero aliquid.
-
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia repellendus veritatis architecto
-          reprehenderit
-          iste autem consequatur illo, voluptate nesciunt dolores consectetur qui distinctio dolor esse est delectus
-          atque
-          libero aliquid.
-        </div>
+        <DescriptionMenu />
 
       </div>
     </div>
@@ -83,10 +61,11 @@
 import { store } from '../store';
 import MainSlider from './MainSlider.vue';
 import ImagesGalleryMain from './ImagesGalleryMain.vue';
+import DescriptionMenu from './DescriptionMenu.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider, ImagesGalleryMain },
+  components: { MainSlider, ImagesGalleryMain, DescriptionMenu },
   data() {
     return {
       store
@@ -106,6 +85,29 @@ export default {
 
 <style lang="scss" scoped>
 main {
+  .imageDescription {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+      border: 1px solid grey;
+      background-image: url('../../public/img/h1-img-4.jpg');
+      height: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 60%;
+      }
+    }
+
+    .description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   .imagesPizza {
     display: flex;

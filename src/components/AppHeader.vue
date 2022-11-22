@@ -77,11 +77,13 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                width: 100%;
 
                 ul {
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
+                    //width: calc(100% / 3);
 
                     li {
                         display: inline;

@@ -38,10 +38,8 @@ export default {
 <style lang="scss" scoped>
 .images {
     display: flex;
-    flex-wrap: wrap;
 
     div {
-        border: 1px solid grey;
 
 
         img {
