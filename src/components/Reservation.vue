@@ -67,7 +67,6 @@ export default {
     .inputLabel {
         width: 80%;
         height: 80%;
-        border: 1px solid black;
         font-size: 20px;
         color: white;
         font-weight: 600;
