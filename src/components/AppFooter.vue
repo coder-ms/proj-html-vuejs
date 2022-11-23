@@ -12,18 +12,51 @@
                             <li v-for="item in footerSectionOne[0].linkSectionOne">{{ item }}</li>
                         </ul>
                         <ul>
-                            <li>
-                                <h4>{{ footerSectionOne[1].titleSectionOne }}</h4>
-                            </li>
                             <li v-for="item in footerSectionOne[1].linkSectionOne">{{ item }}</li>
+                        </ul>
+                        <ul>
+                            <li v-for="item in footerSectionOne[2].linkSectionOne">{{ item }}</li>
+                        </ul>
+                        <ul>
+                            <li v-for="item in footerSectionOne[3].linkSectionOne">{{ item }}</li>
                         </ul>
                     </div>
                     <div class="col-4 col-lg-4 col-md-4 col-sm-4">
                         <ul>
                             <li>
-                                <h4>{{ footerSectionOne[2].titleSectionOne }}</h4>
+                                <h4>{{ footerSectionOne[4].titleSectionOne }}</h4>
                             </li>
-                            <li v-for=" item in footerSectionOne[2].linkSectionOne">{{ item }}</li>
+                            <li>
+                                <h5>{{ footerSectionOne[4].titleSectionOne }}</h5>
+                            </li>
+                            <li v-for=" item in footerSectionOne[4].linkSectionOne">{{ item }}</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>{{ footerSectionOne[5].titleSectionOne }}</h5>
+                            </li>
+                            <li v-for=" item in footerSectionOne[5].linkSectionOne">{{ item }}</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>{{ footerSectionOne[6].titleSectionOne }}</h5>
+                            </li>
+                            <li v-for=" item in footerSectionOne[6].linkSectionOne">{{ item }}</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>{{ footerSectionOne[7].titleSectionOne }}</h5>
+                            </li>
+                            <li v-for=" item in footerSectionOne[7].linkSectionOne">{{ item }}</li>
+                        </ul>
+                        <ul>
+                            <li v-for=" item in footerSectionOne[8].linkSectionOne">
+                                <h5> {{ item }}</h5>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-4 col-lg-4 col-md-4 col-sm-4">
@@ -51,15 +84,36 @@ export default {
             footerSectionOne: [
                 {
                     titleSectionOne: 'FIND OUR RESTAURANTS',
-                    linkSectionOne: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+                    linkSectionOne: ['1614 E. Bell Rd #104', 'Salerno, AZ 85022', '(602)867-1010']
                 },
                 {
-                    titleSectionOne: 'shop',
-                    linkSectionOne: ['Shop DC', 'Shop DC Collectibles']
+                    linkSectionOne: ['204 Piazza E. Pizzatta Tommaso', 'Sorrento, AZ 85022', '(358)867-1010']
                 },
                 {
-                    titleSectionOne: 'WORKING HOURS',
-                    linkSectionOne: ['Terms Of Use', 'Privacy policy (new)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
+                    linkSectionOne: ['Vale Puglia 54', 'Torre3 del greco, AZ 85022', '(359)867-1010']
+                },
+                {
+                    linkSectionOne: ['Corso Itali AA', 'Naples, AZ 85022', '(909)867-1010']
+                },
+                {
+                    titleSectionOne: 'MONDAY',
+                    linkSectionOne: ['Kitchen Closed']
+                },
+                {
+                    titleSectionOne: 'TUESDAY UNTIL FRIDAY',
+                    linkSectionOne: ['9:00-22:00']
+                },
+                {
+                    titleSectionOne: 'SATURDAY',
+                    titleSectionTwo: 'ciao', //
+                    linkSectionOne: ['Saturday 11am to Midnight']
+                },
+                {
+                    titleSectionOne: 'SUNDAY',
+                    linkSectionOne: ['9:00-22:00']
+                },
+                {
+                    linkSectionOne: ['FOLLOW US: ']
                 },
             ]
         }
@@ -71,6 +125,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+    margin-top: 10px;
 
     .footerSec1 {
         display: flex;
@@ -83,7 +138,7 @@ footer {
             overflow: hidden;
             width: 100%;
             margin: 0 auto;
-            padding-top: 20px;
+
 
             .links {
                 background-color: black;

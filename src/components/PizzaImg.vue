@@ -5,7 +5,7 @@
             class="imagesPizza col-2 col-lg-2 col-md-2 col-sm-2">
             <div class="pizzaBlock" v-if="item.pizzaQuantity == true">
                 <div class="soldContainer">
-                    <a class="sold" href="#sold">{{ item.pizzaQuantity }}</a>
+                    <a class="sold" href="#sold">SOLD</a>
                 </div>
 
                 <div class="pizza">
@@ -16,6 +16,9 @@
                 </div>
             </div>
             <div class="pizzaBlock" v-else>
+                <div class="soldContainerx">
+
+                </div>
                 <div class="pizza">
                     <img :src="item.imagePizza" alt="" />
                     <h5>{{ item.pizzaTypology }}</h5>
@@ -38,6 +41,7 @@ export default {
                     pizzaTypology: 'BISMARK',
                     originalPrice: '$35.00',
                     pizzaPrice: '$30.00',
+                    pizzaQuantity: false,
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-2a-150x150.png',
@@ -55,16 +59,19 @@ export default {
                     imagePizza: '../../public/img/h3-product-img-4a-150x150.png',
                     pizzaTypology: 'PIZZA TARTUFATA',
                     pizzaPrice: '$45.00',
+                    pizzaQuantity: false,
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-5a-150x150.png',
                     pizzaTypology: 'FRANCESCANA',
                     pizzaPrice: '$25.00',
+                    pizzaQuantity: false,
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-6a-100x100.png',
                     pizzaTypology: 'CAMPAGNOLA',
                     pizzaPrice: '$50.00-$95.00 ',
+                    pizzaQuantity: false,
                 },
             ],
         }
@@ -102,6 +109,12 @@ export default {
                     text-decoration: none;
                     color: white;
                 }
+            }
+
+            .soldContainerx {
+                background-color: transparent;
+                height: 40px;
+                width: 40px;
             }
 
 
