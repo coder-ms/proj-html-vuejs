@@ -4,27 +4,19 @@
             <div class="col-6 col-lg-6 col-md-6 col-sm-6">
                 <div>
                     <h6>MADE WITH LOVE</h6>
-                    <h2>DELISH PIZZA DEALS</h2>
+                    <h3>DELISH PIZZA DEALS</h3>
                 </div>
 
                 <div v-for="(item, index) in MenuArray" :key="item"
                     class="descriptionx col-8 col-lg-8 col-md-8 col-sm-8">
                     <div class="col-2 col-lg-2 col-md-2 col-sm-2">
-                        <h3>{{ item.day }}</h3>
+                        <h2>{{ item.day }}</h2>
                         <h4>{{ item.month }}</h4>
                     </div>
                     <div class="col-10 col-lg-10 col-md-10 col-sm-10">
                         <h3>{{ item.description }}</h3>
-                        <p><i class="fa-solid fa-location-dot"></i>{{ item.month }}</p>
+                        <p><i class="fa-solid fa-location-dot"></i>&nbsp;{{ item.address }}</p>
                     </div>
-                    <!--
-                    <h2>SPECIALS*</h2>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesent ut.</h5>
-                    <div v-for="(item, index) in MenuArray" :key="item">
-                        <h3>{{ item.dollar }} <span> {{ item.combo }} </span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesent ut aliquam dui.</p>
-                    </div>
-                    -->
                 </div>
             </div>
         </div>
@@ -49,19 +41,19 @@ export default {
                     day: '02',
                     month: 'NOV',
                     description: 'TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO',
-                    address: 'combo piccolo',
+                    address: '204 E. Piazzatta Tommaso',
                 },
                 {
                     day: '03',
                     month: 'NOV',
                     description: 'TERRAZZA PATIO DINING SPACE OPENING THIS WEEKEND',
-                    address: '',
+                    address: '204 E. Piazzatta Tommaso',
                 },
                 {
                     day: '05',
                     month: 'NOV',
                     description: 'SIENNA PRIVATE DINING ROOM WITH STEPHANE BRUNN',
-                    address: 'combo piccolo',
+                    address: '204 E. Piazzatta Tommaso',
                 },
             ],
         }
@@ -85,37 +77,57 @@ export default {
         border: 1px solid white;
 
         div {
+            color: white;
+            padding: 10px 0;
 
-
-            h3 {
-                color: white;
-                font-size: 30px;
-                font-weight: 700;
-            }
-
-            h4 {
-                color: rgb(209, 1, 1);
-                font-size: 12px;
-            }
-
-            .descriptionx {
+            div:nth-child(3) {
                 border-bottom: 1px dashed gold;
-                width: 100%;
-                display: flex;
+                border-top: 1px dashed gold;
+            }
+
+            div {
+                h6 {
+                    color: rgb(209, 50, 1);
+                    font-size: 14px;
+                }
 
                 h3 {
                     color: white;
-                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            h2 {
+                color: rgb(209, 50, 1);
+                font-size: 32px;
+                font-weight: 800;
+                line-height: 0.8;
+            }
+
+            h4 {
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .descriptionx {
+
+                width: 100%;
+                display: flex;
+                line-height: 1.5;
+
+                h3 {
+                    color: white;
+                    font-size: 18px;
                     font-weight: 600;
                 }
 
                 p {
-                    color: rgb(209, 1, 1);
-                    font-size: 12px;
+                    color: rgb(209, 50, 1);
+                    font-size: 10px;
                 }
             }
         }
-
     }
 
     .imageComic {
