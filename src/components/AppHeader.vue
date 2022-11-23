@@ -95,17 +95,17 @@ header {
 
                         .navbarBrand {
                             &:first-child {
-                                background-color: rgb(255, 102, 0);
+                                background-color: #333333;
                                 padding: 10px;
                                 font-weight: 800;
 
                                 &:hover {
-                                    color: rgb(255, 102, 0);
+                                    color: #333333;
                                     background-color: white;
                                 }
 
                                 &:active {
-                                    color: rgb(255, 102, 0);
+                                    color: #333333;
                                     background-color: white;
                                 }
                             }
