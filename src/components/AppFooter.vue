@@ -2,7 +2,7 @@
     <footer>
         <div class="footerSec1 col-12 col-lg-12 col-md-12 col-sm-12">
             <div class="sectionOne col-6 col-lg-6 col-md-6 col-sm-6">
-                <div class="links col-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="links col-7 col-lg-7 col-md-7 col-sm-7">
                     <div class="col-4 col-lg-4 col-md-4 col-sm-4">
                         <!--<div v-for="(item, index) in MenuArray" :key="item"-->
                         <ul>
@@ -51,11 +51,14 @@
                         </ul>
                         <ul>
                             <li v-for=" item in footerSectionOne[8].linkSectionOne">
-                                <h5> {{ item }}</h5>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin"></i>
+                                <h5>
+                                    {{ item }}
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </h5>
+
                             </li>
                         </ul>
                     </div>
@@ -65,7 +68,7 @@
                         <img src="../../public/svg/svg-11.svg" alt="Baffo">
                     </div>
                 </div>
-                <div class="imageComic col-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="imageComic col-5 col-lg-5 col-md-5 col-sm-5">
                     <img src="../../public/img/footer-img-1.jpg" alt="Baffo">
                 </div>
             </div>
@@ -133,7 +136,7 @@ footer {
         .sectionOne {
             display: flex;
             justify-content: space-between;
-            height: 100%;
+            height: 69vh;
             position: relative;
             overflow: hidden;
             width: 100%;
