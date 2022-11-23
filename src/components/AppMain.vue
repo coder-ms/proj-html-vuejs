@@ -40,6 +40,9 @@
     <!--PIZZA COMICS-->
     <PizzaComics />
 
+    <!--RESERVATION-->
+    <Reservation />
+
   </main>
 
 
@@ -58,10 +61,11 @@ import ClientTypology from './ClientTypology.vue';
 import CostumerCard from './CostumerCard.vue';
 import PizzaImg from './PizzaImg.vue';
 import PizzaComics from './PizzaComics.vue';
+import Reservation from './Reservation.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, CostumerCard, ClientTypology, PizzaImg, PizzaComics },
+  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, CostumerCard, ClientTypology, PizzaImg, PizzaComics, Reservation },
   data() {
     return {
       store

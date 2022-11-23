@@ -3,7 +3,7 @@
 
         <div v-for="(item, index) in imgGalleryMainArray" :key="item"
             class="imagesPizza col-2 col-lg-2 col-md-2 col-sm-2">
-            <div class="pizzaBlock" v-if="item.pizzaQuantity">
+            <div class="pizzaBlock" v-if="item.pizzaQuantity == true">
                 <div class="soldContainer">
                     <a class="sold" href="#sold">{{ item.pizzaQuantity }}</a>
                 </div>
@@ -43,12 +43,13 @@ export default {
                     imagePizza: '../../public/img/h3-product-img-2a-150x150.png',
                     pizzaTypology: 'FIORI DI ZUCCA',
                     pizzaPrice: '$7.00-$50.00',
+                    pizzaQuantity: false,
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-3a-150x150.png',
                     pizzaTypology: 'VALDOSTANA',
                     pizzaPrice: '$55.00',
-                    pizzaQuantity: 'sold',
+                    pizzaQuantity: true, //'sold',
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-4a-150x150.png',
@@ -129,7 +130,7 @@ export default {
                 }
 
                 .currentPrice {
-                    color: rgb(255, 60, 0);
+                    color: #333333;
                     font-size: 12px;
                     font-weight: 600;
                 }
