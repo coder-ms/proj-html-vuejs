@@ -125,12 +125,10 @@ export default {
                 img {
                     margin: 10px 25%;
                     width: 150px;
-                    //transform: translate(0px, -100px);
                 }
 
 
                 h5 {
-                    //color: rgb(210, 64, 30); colore misterioso
                     color: rgb(179, 116, 0);
                     font-size: 14px;
                     font-weight: 600;

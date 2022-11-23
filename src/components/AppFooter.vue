@@ -27,7 +27,7 @@
                                 <h4>{{ footerSectionOne[4].titleSectionOne }}</h4>
                             </li>
                             <li>
-                                <h5>{{ footerSectionOne[4].titleSectionOne }}</h5>
+                                <h5>{{ footerSectionOne[4].titleSectionTwo }}</h5>
                             </li>
                             <li v-for=" item in footerSectionOne[4].linkSectionOne">{{ item }}</li>
                         </ul>
@@ -99,7 +99,8 @@ export default {
                     linkSectionOne: ['Corso Itali AA', 'Naples, AZ 85022', '(909)867-1010']
                 },
                 {
-                    titleSectionOne: 'MONDAY',
+                    titleSectionOne: 'WORKING HOURS',
+                    titleSectionTwo: 'MONDAY',
                     linkSectionOne: ['Kitchen Closed']
                 },
                 {
@@ -155,13 +156,25 @@ footer {
 
                     h4 {
                         font-size: 20px;
-                        color: white;
+                        color: rgb(179, 116, 0);
                         text-transform: uppercase;
                         margin: 12px 0;
+                        font-weight: 700;
                     }
 
                     li {
                         padding: 2px 0;
+
+                        h5 {
+                            color: rgb(179, 116, 0);
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+
+                        i {
+                            color: rgb(179, 116, 0);
+                            margin-right: 5px;
+                        }
                     }
                 }
 
