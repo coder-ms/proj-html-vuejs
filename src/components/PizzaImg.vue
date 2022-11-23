@@ -1,8 +1,11 @@
 <template>
-    <div class="containerx col-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="containerx pizzaScroll col-12 col-lg-12 col-md-12 col-sm-12">
         <div v-for="(item, index) in imgGalleryMainArray" :key="item"
             class="imagesPizza col-2 col-lg-2 col-md-2 col-sm-2">
-            <img :src="item.imagePizza" alt="" />
+
+            <div>
+                <img :src="item.imagePizza" alt="" />
+            </div>
         </div>
     </div>
 </template>
@@ -42,15 +45,24 @@ export default {
 .containerx {
     display: flex;
     height: 300px;
+    overflow-y: hidden;
 
     .imagesPizza {
         background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px;
+
+        img {
+            width: 150px;
+        }
 
         .pizzaSelect {
             border: 1px solid grey;
             display: flex;
             justify-content: center;
-            margin: 0 40px;
+            margin: 0 44px;
 
             a {
                 text-decoration: none;
@@ -82,5 +94,27 @@ export default {
         }
     }
 
+
+}
+
+.pizzaScroll::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.pizzaScroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.pizzaScroll::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    &:hover {
+        background: #d5b14c;
+        transition: 0.5s;
+    }
 }
 </style>

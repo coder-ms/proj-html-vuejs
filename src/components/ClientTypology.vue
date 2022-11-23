@@ -15,16 +15,16 @@ export default {
         return {
             clientTypologyArray: [
                 {
-                    imageClient: '../../public/img/h1-clients-img-1.png',
-                },
-                {
-                    imageClient: '../../public/img/h1-clients-img-2.png',
+                    imageClient: '../../public/img/h1-clients-img-4.png',
                 },
                 {
                     imageClient: '../../public/img/h1-clients-img-3.png',
                 },
                 {
-                    imageClient: '../../public/img/h1-clients-img-4.png',
+                    imageClient: '../../public/img/h1-clients-img-1.png',
+                },
+                {
+                    imageClient: '../../public/img/h1-clients-img-2.png',
                 },
                 {
                     imageClient: '../../public/img/h1-clients-img-5.png',
