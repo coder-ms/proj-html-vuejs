@@ -115,7 +115,7 @@ main {
   }
 
   .pizzaFlavour {
-    margin: 50px 0;
+    //margin: 30px 0;
 
     .pizzaDescription {
       width: 30%;
@@ -125,7 +125,7 @@ main {
 
       h6 {
         margin-top: 20px;
-        color: rgb(255, 60, 0);
+        color: #333333;
         font-size: 12px;
         font-weight: 800;
       }

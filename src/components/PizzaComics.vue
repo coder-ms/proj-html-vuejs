@@ -24,10 +24,6 @@
             <img src="../../public/img/h3-img-5a.jpg" alt="Baffo">
         </div>
     </div>
-
-
-
-
 </template>
 
 <script>
@@ -52,7 +48,7 @@ export default {
                 {
                     day: '05',
                     month: 'NOV',
-                    description: 'SIENNA PRIVATE DINING ROOM WITH STEPHANE BRUNN',
+                    description: 'SIENNA PRIVATE DINING ROOM WITH STéPHANE BRUNN',
                     address: '204 E. Piazzatta Tommaso',
                 },
             ],
@@ -74,7 +70,6 @@ export default {
         justify-content: center;
         align-items: center;
         background-color: black;
-        border: 1px solid white;
 
         div {
             color: white;
@@ -87,7 +82,7 @@ export default {
 
             div {
                 h6 {
-                    color: rgb(209, 50, 1);
+                    color: #333333;
                     font-size: 14px;
                 }
 
@@ -98,7 +93,7 @@ export default {
             }
 
             h2 {
-                color: rgb(209, 50, 1);
+                color: #333333;
                 font-size: 32px;
                 font-weight: 800;
                 line-height: 0.8;
@@ -116,14 +111,17 @@ export default {
                 display: flex;
                 line-height: 1.5;
 
+
                 h3 {
                     color: white;
                     font-size: 18px;
                     font-weight: 600;
+                    line-height: 1.3;
+                    text-transform: uppercase;
                 }
 
                 p {
-                    color: rgb(209, 50, 1);
+                    color: #333333;
                     font-size: 10px;
                 }
             }

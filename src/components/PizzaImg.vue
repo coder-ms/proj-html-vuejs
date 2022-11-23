@@ -1,10 +1,27 @@
 <template>
     <div class="containerx pizzaScroll col-12 col-lg-12 col-md-12 col-sm-12">
+
         <div v-for="(item, index) in imgGalleryMainArray" :key="item"
             class="imagesPizza col-2 col-lg-2 col-md-2 col-sm-2">
+            <div class="pizzaBlock" v-if="item.pizzaQuantity">
+                <div class="soldContainer">
+                    <a class="sold" href="#sold">{{ item.pizzaQuantity }}</a>
+                </div>
 
-            <div>
-                <img :src="item.imagePizza" alt="" />
+                <div class="pizza">
+                    <img :src="item.imagePizza" alt="" />
+                    <h5>{{ item.pizzaTypology }}</h5>
+                    <span v-if="item.originalPrice" class="originalPrice">{{ item.originalPrice }}&nbsp;</span>
+                    <span class="currentPrice">{{ item.pizzaPrice }}</span>
+                </div>
+            </div>
+            <div class="pizzaBlock" v-else>
+                <div class="pizza">
+                    <img :src="item.imagePizza" alt="" />
+                    <h5>{{ item.pizzaTypology }}</h5>
+                    <span v-if="item.originalPrice" class="originalPrice">{{ item.originalPrice }}&nbsp;</span>
+                    <span class="currentPrice">{{ item.pizzaPrice }}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -18,21 +35,35 @@ export default {
             imgGalleryMainArray: [
                 {
                     imagePizza: '../../public/img/h3-product-img-1a-100x100.png',
+                    pizzaTypology: 'BISMARK',
+                    originalPrice: '$35.00',
+                    pizzaPrice: '$30.00',
+                },
+                {
+                    imagePizza: '../../public/img/h3-product-img-2a-150x150.png',
+                    pizzaTypology: 'FIORI DI ZUCCA',
+                    pizzaPrice: '$7.00-$50.00',
+                },
+                {
+                    imagePizza: '../../public/img/h3-product-img-3a-150x150.png',
+                    pizzaTypology: 'VALDOSTANA',
+                    pizzaPrice: '$55.00',
+                    pizzaQuantity: 'sold',
+                },
+                {
+                    imagePizza: '../../public/img/h3-product-img-4a-150x150.png',
+                    pizzaTypology: 'PIZZA TARTUFATA',
+                    pizzaPrice: '$45.00',
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-5a-150x150.png',
-                },
-                {
-                    imagePizza: '../../public/img/h3-product-img-5a-150x150.png',
-                },
-                {
-                    imagePizza: '../../public/img/h3-product-img-5a-150x150.png',
-                },
-                {
-                    imagePizza: '../../public/img/h3-product-img-5a-150x150.png',
+                    pizzaTypology: 'FRANCESCANA',
+                    pizzaPrice: '$25.00',
                 },
                 {
                     imagePizza: '../../public/img/h3-product-img-6a-100x100.png',
+                    pizzaTypology: 'CAMPAGNOLA',
+                    pizzaPrice: '$50.00-$95.00 ',
                 },
             ],
         }
@@ -48,54 +79,66 @@ export default {
     overflow-y: hidden;
 
     .imagesPizza {
-        background-color: beige;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 30px;
+        margin: 0 30px auto;
+        height: 300px;
+        //position: absolute;
 
-        img {
-            width: 150px;
-        }
-
-        .pizzaSelect {
-            border: 1px solid grey;
-            display: flex;
-            justify-content: center;
-            margin: 0 44px;
-
-            a {
-                text-decoration: none;
-                color: white;
-                background-color: rgb(255, 102, 0);
+        .pizzaBlock {
+            .soldContainer {
+                background-color: #333333;
                 height: 40px;
                 width: 40px;
-                text-align: center;
-                padding: 12px 0;
                 border-radius: 50%;
-                transform: translate(-250%);
+                transform: translate(460%, 100%) rotate(-22.5deg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-transform: uppercase;
-                font-size: 12px;
+                font-size: 10px;
+                font-weight: 600;
+
+                .sold {
+                    text-decoration: none;
+                    color: white;
+                }
             }
 
-            img {
-                margin: 0 auto;
+
+
+            .pizza {
+                text-align: center;
+
+                img {
+                    margin: 10px 25%;
+                    width: 150px;
+                    //transform: translate(0px, -100px);
+                }
+
+
+                h5 {
+                    //color: rgb(210, 64, 30); colore misterioso
+                    color: rgb(179, 116, 0);
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .originalPrice {
+                    color: lightgrey;
+                    font-size: 12px;
+                    text-decoration: line-through;
+                }
+
+                .currentPrice {
+                    color: rgb(255, 60, 0);
+                    font-size: 12px;
+                    font-weight: 600;
+                }
             }
         }
 
-        .firstPizza {
-            border: 1px solid grey;
-            transform: translate(-30%);
-        }
-
-        .lastPizza {
-            border: 1px solid grey;
-            transform: translate(30%);
-        }
     }
-
-
 }
+
 
 .pizzaScroll::-webkit-scrollbar {
     width: 5px;
@@ -108,7 +151,7 @@ export default {
 }
 
 .pizzaScroll::-webkit-scrollbar-thumb {
-    background: #212121;
+    background: grey;
     border-radius: 10px;
     transition: 0.5s;
 

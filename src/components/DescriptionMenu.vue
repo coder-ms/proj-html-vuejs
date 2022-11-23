@@ -47,7 +47,7 @@ h5 {
 }
 
 h3 {
-    color: rgb(209, 1, 1);
+    color: #333333;
     font-size: 25px;
     font-weight: 600;
     margin: 20px 0;

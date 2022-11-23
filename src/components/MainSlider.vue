@@ -88,7 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 .containerx {
-    background-color: rgb(228, 228, 228);
+    background-color: #e4e4e4;
     //border: 1px solid white;
     height: 625px;
     padding: 10px 0;
