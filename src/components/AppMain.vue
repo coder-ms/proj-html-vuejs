@@ -21,8 +21,8 @@
     <!--SCRAMBLE IMG-->
     <ScrambleImg />
 
-    <!--CUSTOMERS-->
-
+    <!--CUSTOMER CARD-->
+    <CostumerCard />
     <!--CLIENT TYPOLOGY-->
     <ClientTypology />
 
@@ -40,13 +40,6 @@
     <!--PIZZA COMICS-->
     <PizzaComics />
 
-
-
-
-
-
-
-
   </main>
 
 
@@ -62,13 +55,13 @@ import ImagesGalleryMain from './ImagesGalleryMain.vue';
 import DescriptionMenu from './DescriptionMenu.vue';
 import ScrambleImg from './ScrambleImg.vue';
 import ClientTypology from './ClientTypology.vue';
-
+import CostumerCard from './CostumerCard.vue';
 import PizzaImg from './PizzaImg.vue';
 import PizzaComics from './PizzaComics.vue';
 
 export default {
   name: 'AppHeader',
-  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, ClientTypology, PizzaImg, PizzaComics },
+  components: { MainSlider, ImagesGalleryMain, DescriptionMenu, ScrambleImg, CostumerCard, ClientTypology, PizzaImg, PizzaComics },
   data() {
     return {
       store
