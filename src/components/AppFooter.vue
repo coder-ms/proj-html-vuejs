@@ -1,9 +1,9 @@
 <template>
     <footer>
         <div class="footerSec1 col-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="sectionOne col-6 col-lg-6 col-md-6 col-sm-6">
+            <div class="sectionOne col-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="links col-7 col-lg-7 col-md-7 col-sm-7">
-                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                    <div class="topFooter col-4 col-lg-4 col-md-4 col-sm-4">
                         <!--<div v-for="(item, index) in MenuArray" :key="item"-->
                         <ul>
                             <li>
@@ -21,7 +21,7 @@
                             <li v-for="item in footerSectionOne[3].linkSectionOne">{{ item }}</li>
                         </ul>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                    <div class="topFooter col-4 col-lg-4 col-md-4 col-sm-4">
                         <ul>
                             <li>
                                 <h4>{{ footerSectionOne[4].titleSectionOne }}</h4>
@@ -39,7 +39,7 @@
                         </ul>
                         <ul>
                             <li>
-                                <h5>{{ footerSectionOne[6].titleSectionOne }}</h5>
+                                <h5>{{ footerSectionOne[6].titleSectionOne }} <span>*</span></h5>
                             </li>
                             <li v-for=" item in footerSectionOne[6].linkSectionOne">{{ item }}</li>
                         </ul>
@@ -62,10 +62,28 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 col-sm-4">
+                    <div class="topFooter col-4 col-lg-4 col-md-4 col-sm-4">
                         <p>THE DON PEPPE CREW FIRST AND FOREMOST VALUES AND AUTHENTIC, WELL BAKED SLICE OF PIZZA</p>
 
                         <img src="../../public/svg/svg-11.svg" alt="Baffo">
+                    </div>
+                    <div class="bottomFooter col-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="col-10 col-lg-10 col-md-10 col-sm-10">
+                            <ul>
+                                <li>
+                                    <h5>{{ footerSectionOne[9].titleSectionOne }}</h5>
+                                </li>
+                                <li v-for=" item in footerSectionOne[9].linkSectionOne">{{ item }}
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>by</span>
+                                    <span class="nameBrandFooter">Qode Interactive</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2 col-lg-2 col-md-2 col-sm-2">
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="imageComic col-5 col-lg-5 col-md-5 col-sm-5">
@@ -109,7 +127,6 @@ export default {
                 },
                 {
                     titleSectionOne: 'SATURDAY',
-                    titleSectionTwo: 'ciao', //
                     linkSectionOne: ['Saturday 11am to Midnight']
                 },
                 {
@@ -118,6 +135,9 @@ export default {
                 },
                 {
                     linkSectionOne: ['FOLLOW US: ']
+                },
+                {
+                    linkSectionOne: ['Created with ']
                 },
             ]
         }
@@ -147,35 +167,76 @@ footer {
             .links {
                 background-color: black;
                 display: flex;
+                flex-wrap: wrap;
 
-                ul {
-                    list-style: none;
-                    color: grey;
-                    font-size: 16px;
-                    margin-right: 20px;
+                .topFooter {
+                    border: 1px solid white;
+                    height: 75%;
 
-                    h4 {
-                        font-size: 20px;
-                        color: rgb(179, 116, 0);
-                        text-transform: uppercase;
-                        margin: 12px 0;
-                        font-weight: 700;
+                    ul {
+                        list-style: none;
+                        color: grey;
+                        font-size: 16px;
+                        margin-right: 20px;
+
+                        h4 {
+                            font-size: 20px;
+                            color: rgb(179, 116, 0);
+                            text-transform: uppercase;
+                            margin: 12px 0;
+                            font-weight: 700;
+                        }
+
+                        li {
+                            padding: 2px 0;
+
+                            h5 {
+                                color: rgb(179, 116, 0);
+                                font-weight: 700;
+                                font-size: 18px;
+
+                                span {
+                                    color: #333333;
+                                }
+                            }
+
+                            i {
+                                color: white;
+                                margin-right: 5px;
+                            }
+                        }
                     }
 
-                    li {
-                        padding: 2px 0;
+                }
 
-                        h5 {
-                            color: rgb(179, 116, 0);
-                            font-weight: 700;
-                            font-size: 18px;
-                        }
+                .bottomFooter {
+                    border: 1px solid white;
+                    height: 25%;
+                    color: rgb(179, 116, 0);
+                    font-weight: 700;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    ul {
+                        list-style: none;
 
                         i {
                             color: rgb(179, 116, 0);
                             margin-right: 5px;
                         }
+
+                        span {
+                            color: rgb(179, 116, 0);
+                        }
+
+                        .nameBrandFooter {
+                            color: rgb(1, 46, 1);
+                            margin-left: 5px;
+                        }
                     }
+
                 }
 
                 p {
@@ -197,7 +258,7 @@ footer {
 
     .imageComic {
         img {
-            width: 100%;
+            width: 50vw;
         }
     }
 }
