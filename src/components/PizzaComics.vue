@@ -62,6 +62,7 @@ export default {
 <style lang="scss" scoped>
 .containerx {
     display: flex;
+    height: 92vh;
     // overflow: hidden;
 
 
@@ -71,9 +72,11 @@ export default {
         align-items: center;
         background-color: black;
 
+
         div {
             color: white;
             padding: 10px 0;
+
 
             div:nth-child(3) {
                 border-bottom: 1px dashed gold;

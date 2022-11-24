@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
-    height: 250px;
+    height: 25vh;
     background-color: rgb(247, 237, 225);
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ div {
 
         div {
             img {
-                width: 100%;
+                width: 24vh;
             }
         }
     }

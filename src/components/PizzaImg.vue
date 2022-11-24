@@ -83,21 +83,21 @@ export default {
 <style lang="scss" scoped>
 .containerx {
     display: flex;
-    height: 300px;
+    height: 31.5vh;
     overflow-y: hidden;
 
     .imagesPizza {
         margin: 0 30px auto;
-        height: 300px;
+        height: 32vh;
         //position: absolute;
 
         .pizzaBlock {
             .soldContainer {
                 background-color: #333333;
-                height: 40px;
-                width: 40px;
+                height: 5vh;
+                width: 5vh;
                 border-radius: 50%;
-                transform: translate(460%, 100%) rotate(-22.5deg);
+                transform: translate(420%, 100%) rotate(-22.5deg);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -113,18 +113,17 @@ export default {
 
             .soldContainerx {
                 background-color: transparent;
-                height: 40px;
-                width: 40px;
+                height: 5vh;
+                width: 5vh;
             }
-
-
 
             .pizza {
                 text-align: center;
 
                 img {
                     margin: 10px 25%;
-                    width: 150px;
+                    height: 15vh;
+                    width: 15vh;
                 }
 
 
@@ -153,8 +152,8 @@ export default {
 
 
 .pizzaScroll::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
+    width: 2vh;
+    height: 1.5vh;
 }
 
 .pizzaScroll::-webkit-scrollbar-track {

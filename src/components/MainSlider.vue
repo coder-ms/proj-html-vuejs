@@ -90,7 +90,7 @@ export default {
 .containerx {
     background-color: #e4e4e4;
     //border: 1px solid white;
-    height: 625px;
+    height: 54vh;
     padding: 10px 0;
 
 
@@ -107,17 +107,19 @@ export default {
             cursor: pointer;
             z-index: 1000;
             transform: rotate(90deg); //translate(-20%, -80%);
+            margin: 3vh 0;
 
             .prevJumbo {
-                color: rgb(255, 102, 0);
-                font-size: 12px;
+                color: #333333;
                 font-weight: 600;
-                width: 80px;
-                height: 80px;
+                width: 11vh;
+                height: 11vh;
                 border-radius: 50%;
                 background: white;
-                border: 1px solid grey;
-                padding: 15px 20px;
+                border: 1px solid #e4e4e4;
+                font-size: 1.7vh;
+                font-weight: 600;
+                padding: 3vh;
                 transform: translate(0%, 60%);
             }
         }
@@ -131,7 +133,7 @@ export default {
 
             img {
                 padding-top: 80px;
-                height: 575px;
+                height: 50vh;
             }
         }
 
@@ -144,18 +146,16 @@ export default {
             transform: rotate(270deg); //translate(-20%, -80%);
 
             .nextJumbo {
-                color: rgb(255, 102, 0);
-                font-size: 12px;
+                color: #333333;
                 font-weight: 600;
-                width: 80px;
-                height: 80px;
+                width: 11vh;
+                height: 11vh;
                 border-radius: 50%;
                 background: white;
                 border: 1px solid grey;
-                color: rgb(255, 102, 0);
-                font-size: 12px;
+                font-size: 1.7vh;
                 font-weight: 600;
-                padding: 15px 20px;
+                padding: 3vh;
                 transform: translate(0%, 60%);
             }
         }

@@ -89,22 +89,25 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
+    height: 86vh;
 
     .image {
       //border: 1px solid grey;
       background-image: url('../../public/img/h1-img-4.jpg');
-      height: 800px;
+      height: 84vh;
       display: flex;
       align-items: center;
       justify-content: center;
 
 
       img {
-        width: 60%;
+        width: 50vh;
+        height: 50vh;
       }
     }
 
     .description {
+      height: 84vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -113,6 +116,7 @@ main {
 
   .pizzaFlavour {
     //margin: 30px 0;
+    height: 52vh;
 
     .pizzaDescription {
       width: 30%;

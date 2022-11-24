@@ -33,13 +33,14 @@ export default {
 <style lang="scss" scoped>
 .images {
     display: flex;
+    height: 36vh;
 
     div {
         padding: 10px;
 
         img {
             width: 100%;
-
+            height: 1005;
         }
     }
 }

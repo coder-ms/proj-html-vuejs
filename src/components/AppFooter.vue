@@ -172,8 +172,8 @@ footer {
                 flex-wrap: wrap;
 
                 .topFooter {
-                    border: 1px solid white;
                     height: 75%;
+                    padding: 10px 0;
 
                     ul {
                         list-style: none;
@@ -221,7 +221,6 @@ footer {
                     align-items: center;
 
                     .createdBy {
-                        border: 1px solid white;
                         height: 100%;
                         display: flex;
                         align-items: center;
@@ -248,7 +247,6 @@ footer {
 
                     .bollinoDocg {
                         height: 100%;
-                        border: 1px solid white;
                     }
 
                 }

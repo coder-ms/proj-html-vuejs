@@ -55,6 +55,7 @@ export default {
 <style lang="scss" scoped>
 header {
     width: 100%;
+    height: 61vh;
     margin: 0 auto;
     overflow-x: hidden;
     //border: 1px solid green;
@@ -67,7 +68,7 @@ header {
         //border: 1px solid yellow;
 
         .pizzaMenu {
-            height: 80px;
+            height: 9vh;
             padding: 10px;
             width: 70%;
             margin: 0 auto;

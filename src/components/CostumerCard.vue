@@ -58,6 +58,7 @@ export default {
 .images {
     display: flex;
     margin-bottom: 10px;
+    height: 50vh;
 
     .flipCard {
 

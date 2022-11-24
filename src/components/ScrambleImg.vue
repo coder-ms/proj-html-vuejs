@@ -54,29 +54,30 @@ export default {
 
 <style lang="scss" scoped>
 .containerx {
-    height: 600px;
+    height: 64vh;
     margin: 10px 0;
     //overflow: hidden;
 
     .rowOne {
         display: flex;
-        height: 150px;
+        height: 16vh;
 
         .colOne {
-            height: 150px;
+            height: 16vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             // Stessa funzione di transform: translate(), ma per background-image
             background-position: bottom right;
         }
 
         .colTwo {
-            height: 150px;
+            height: 16vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: bottom;
+            overflow: visible;
         }
 
         .colThree {
-            height: 150px;
+            height: 16vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: bottom left;
         }
@@ -84,36 +85,41 @@ export default {
 
     .rowTwo {
         display: flex;
-        height: 300px;
+        height: 32vh;
 
         .colOneBig {
-            height: 300px;
+            height: 32vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: top right;
         }
 
         .colTwoBig {
-            height: 300px;
+            height: 32vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: center top -30px;
+            overflow: visible;
 
             .motto {
                 margin: 0 15%;
                 display: flex;
                 justify-content: center;
+                overflow: visible;
+                height: 40vh;
+                transform: translate(6%, -9%);
+
 
                 p {
-                    font-size: 45px;
+                    font-size: 5vh;
                     color: white;
                     font-weight: 600;
-                    line-height: 1.5;
+                    line-height: 2;
                 }
             }
         }
 
 
         .colThreeBig {
-            height: 300px;
+            height: 32vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: left -10px;
         }
@@ -121,22 +127,23 @@ export default {
 
     .rowThree {
         display: flex;
-        height: 150px;
+        height: 16vh;
 
         .colOne {
-            height: 150px;
+            height: 16vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: bottom -330px right;
         }
 
         .colTwo {
-            height: 150px;
+            height: 16vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: top -600px center;
+            overflow: visible;
         }
 
         .colThree {
-            height: 150px;
+            height: 16vh;
             background-image: url('../../public/img/h3-background-img.jpg');
             background-position: left bottom -340px;
         }
