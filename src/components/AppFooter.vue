@@ -65,10 +65,9 @@
                     <div class="topFooter col-4 col-lg-4 col-md-4 col-sm-4">
                         <p>THE DON PEPPE CREW FIRST AND FOREMOST VALUES AND AUTHENTIC, WELL BAKED SLICE OF PIZZA</p>
 
-                        <img src="../../public/svg/svg-11.svg" alt="Baffo">
                     </div>
                     <div class="bottomFooter col-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="col-10 col-lg-10 col-md-10 col-sm-10">
+                        <div class="createdBy col-10 col-lg-10 col-md-10 col-sm-10">
                             <ul>
                                 <li>
                                     <h5>{{ footerSectionOne[9].titleSectionOne }}</h5>
@@ -80,8 +79,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-2 col-lg-2 col-md-2 col-sm-2">
-
+                        <div class="bollinoDocg col-2 col-lg-2 col-md-2 col-sm-2">
+                            <img :src="footerSectionOne[10].titleSectionOne" alt="Baffo">
                         </div>
 
                     </div>
@@ -138,6 +137,9 @@ export default {
                 },
                 {
                     linkSectionOne: ['Created with ']
+                },
+                {
+                    titleSectionOne: '../../public/svg/svg-11.svg',
                 },
             ]
         }
@@ -210,7 +212,6 @@ footer {
                 }
 
                 .bottomFooter {
-                    border: 1px solid white;
                     height: 25%;
                     color: rgb(179, 116, 0);
                     font-weight: 700;
@@ -219,22 +220,35 @@ footer {
                     justify-content: space-between;
                     align-items: center;
 
-                    ul {
-                        list-style: none;
+                    .createdBy {
+                        border: 1px solid white;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
 
-                        i {
-                            color: rgb(179, 116, 0);
-                            margin-right: 5px;
-                        }
+                        ul {
+                            list-style: none;
 
-                        span {
-                            color: rgb(179, 116, 0);
-                        }
+                            i {
+                                color: rgb(179, 116, 0);
+                                margin-right: 5px;
+                            }
 
-                        .nameBrandFooter {
-                            color: rgb(1, 46, 1);
-                            margin-left: 5px;
+                            span {
+                                color: rgb(179, 116, 0);
+                            }
+
+                            .nameBrandFooter {
+                                color: rgb(1, 46, 1);
+                                margin-left: 5px;
+                            }
                         }
+                    }
+
+
+                    .bollinoDocg {
+                        height: 100%;
+                        border: 1px solid white;
                     }
 
                 }
