@@ -89,7 +89,7 @@ export default {
 <style lang="scss" scoped>
 .containerx {
     background-color: black;
-    height: 54vh;
+    height: 60vh;
     padding: 10px 0;
 
 
