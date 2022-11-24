@@ -102,7 +102,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 text-transform: uppercase;
-                font-size: 10px;
+                font-size: 1.25vh;
                 font-weight: 600;
 
                 .sold {
@@ -129,19 +129,19 @@ export default {
 
                 h5 {
                     color: rgb(179, 116, 0);
-                    font-size: 14px;
+                    font-size: 1.6vh;
                     font-weight: 600;
                 }
 
                 .originalPrice {
                     color: lightgrey;
-                    font-size: 12px;
+                    font-size: 1.4vh;
                     text-decoration: line-through;
                 }
 
                 .currentPrice {
                     color: #333333;
-                    font-size: 12px;
+                    font-size: 1.4vh;
                     font-weight: 600;
                 }
             }

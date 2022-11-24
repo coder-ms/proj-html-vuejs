@@ -3,9 +3,11 @@
         <div class="inputLabel col-12 col-lg-12 col-md-12 col-sm-12">
 
             <div class="infoInput col-2 col-lg-2 col-md-2 col-sm-2">
-                <label class="visually-hidden" for="charactername">Search name</label>
-                <!--v-model.trim="store.searchTitleVal"-->
-                <input type="person" class="form-control" id="charactername" placeholder="Search name">
+                <label class="visually-hidden" for="searchStatus"></label>
+                <select class="form-select" id="searchStatus" v-model="store.search.status">
+                    <option selected value="">Reservation for...</option>
+                    <option :value="status" v-for="(status, index) in statusOptions" :key="index">{{ status }}</option>
+                </select>
 
             </div>
 
@@ -14,7 +16,7 @@
             </div>
 
             <div class="infoInput col-2 col-lg-2 col-md-2 col-sm-2">
-                <label class="visually-hidden" for="charactername">Search name</label>
+                <label class="visually-hidden" for="charactername"></label>
                 <!--v-model.trim="store.searchTitleVal"-->
                 <input type="date" class="form-control" id="charactername" placeholder="Search name">
             </div>
@@ -24,7 +26,7 @@
             </div>
 
             <div class="infoInput col-2 col-lg-2 col-md-2 col-sm-2">
-                <label class="visually-hidden" for="charactername">Search name</label>
+                <label class="visually-hidden" for="charactername"></label>
                 <!--v-model.trim="store.searchTitleVal"-->
                 <input type="time" class="form-control" id="charactername" placeholder="Search name">
             </div>
@@ -43,14 +45,21 @@
 </template>
 
 <script>
+import { store } from '../store';
 export default {
 
     name: 'Reservation',
     data() {
         return {
-
+            store,
+            statusOptions: [
+                '1 person',
+                '2 people',
+                '3 people',
+                '4 people'
+            ],
         }
-    },
+    }
 
 }
 </script>
@@ -60,10 +69,12 @@ export default {
 .containerx {
     background-image: url('../../public/img/h3-background-img-3.jpg');
     height: 25vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    overflow-x: hidden;
 
     .inputLabel {
         width: 80%;
