@@ -129,6 +129,7 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
+            //background-image: url();
 
             img {
                 padding-top: 80px;

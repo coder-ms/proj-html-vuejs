@@ -6,7 +6,10 @@
                 <p class="prevJumbo" @click="prevJumbo()">PREV</p>
             </div>
             <div class="jumboSlider">
-                <img :src="HeaderSliderArray[prevNextJumbo].image" alt="" />
+                <div>
+                    <h3>{{ HeaderSliderArray[prevNextJumbo].comment }}</h3>
+                    <p>{{ HeaderSliderArray[prevNextJumbo].author }}</p>
+                </div>
             </div>
 
             <div class="nextButton">
@@ -25,24 +28,22 @@ export default {
         return {
             prevNextJumbo: 0,
             HeaderSliderArray: [
-                //immagine di background, scritte in array
+                //immagine di background scritta in scss, commenti scritti in array
                 {
-                    image: '../../public/img/h3-rev-img-1.png',
+                    comment: '"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"',
+                    author: 'WASHINGTON POST 2018'
                 },
                 {
-                    image: '../../public/img/h3-rev-img-2.png',
+                    comment: '"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro optio dolorem atque!',
+                    author: 'WASHINGTON POST 2018'
                 },
                 {
-                    image: '../../public/img/h3-rev-img-3.png',
+                    comment: '"Lorem ipsum dolor. Porro optio dolorem atque! Tempora blanditiis ratione, corporis sint necessitatibus debitis iste"',
+                    author: 'WASHINGTON POST 2018'
                 },
                 {
-                    image: '../../public/img/h3-rev-img-4.png',
-                },
-                {
-                    image: '../../public/img/h3-rev-img-5.png',
-                },
-                {
-                    image: '../../public/img/h3-rev-img-6.png',
+                    comment: '"Lorem ipsum dolor, molestiae ex culpa voluptatum architecto aspernatur deserunt neque numquam."',
+                    author: 'WASHINGTON POST 2018'
                 },
             ],
         }
@@ -88,7 +89,7 @@ export default {
 
 <style lang="scss" scoped>
 .containerx {
-    background-color: #e4e4e4;
+    background-color: #f6f7f2;
     //border: 1px solid white;
     height: 54vh;
     padding: 10px 0;
@@ -106,7 +107,7 @@ export default {
             align-items: center;
             cursor: pointer;
             z-index: 1000;
-            transform: rotate(90deg); //translate(-20%, -80%);
+            transform: rotate(90deg);
             margin: 3vh 0;
 
             .prevJumbo {
@@ -126,14 +127,16 @@ export default {
 
         .jumboSlider {
             width: 100%;
-            //border: 1px solid white;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
+            background-image: url('../../public/img/h3-testimonials-bckgrnd.jpg');
+            color: black;
+            height: 50vh;
 
-            img {
-                padding-top: 80px;
-                height: 50vh;
+            div {
+                width: 50vw;
             }
         }
 
